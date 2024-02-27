@@ -1,0 +1,31 @@
+.option-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 1rem 0;
+
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+// MOBILE RESPONSIVE PART
+@media only screen and (max-width: 600px) {
+    .option-container{
+        gap:1.5rem;
+        .link{
+            font-size: 0.5rem;
+        }
+    }
+
+    .breadcrumb-wrapper{
+        font-size: 0.5rem;
+        .link{
+            font-size: 0.5rem;
+        }
+    }
+}

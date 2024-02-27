@@ -1,0 +1,105 @@
+// ********** horizontal card ***********
+
+.best-product {
+    background-color: #FA8128;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 130px;
+    height: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 6px;
+}
+
+.mainfeature {
+    background-color: #fdf5e2;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 25px;
+    max-width:22rem;
+
+    .feature {
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    line-height: 0.1;
+
+    .check-icon {
+        color: #004792;
+        background-color: #E6FDFF;
+    }
+}
+
+input[type="checkbox"]:checked {
+
+    color: skyblue;
+    background-color: white;
+
+}
+
+
+// **********rating global component******
+.rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    .rating {
+        background-color: #E6FDFF;
+        color: #004792;
+        line-height: 0.4;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .best-product {
+        width: 70px;
+        height: 20px;
+        font-size: 0.5rem;
+        margin-bottom: 10px;
+
+        .icon {
+            font-size: 0.8rem;
+        }
+
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .sign-btn {
+        font-size: 0.5rem;
+        width: 50px;
+    }
+    .rating-wrapper{
+        margin-bottom: 10px;
+        .rating{
+            font-size:0.5;
+            width:80px;
+        }
+    }
+}
